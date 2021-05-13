@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignUp</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head> 
+<body>
+    <script type="text/javascript">
+        function validate()
+        {
+            var x,y,z;
+            x=document.forms["signup"]["name"].value;
+            y=document.forms["signup"]["mail"].value;
+            z=document.forms["signup"]["password"].value;
+            a=document.forms["signup"]["pno"].value;
+            b=document.forms["signup"]["repassword"].value;
+            i=document.forms["signup"]["checkin"].value;
+            o=document.forms["signup"]["checkout"].value;
+
+            var l=/[a-z]/g;
+            var u=/[A-Z]/g;
+            var n=/[0-9]/g;
+
+            if (i===o)
+            {
+                alert("Inappropriate Checkout date");
+                return false;
+            }
+            if(z!==b)
+            {
+                alert("Enter password correctly!");
+                return false;
+            }
+            if(a.length<10)
+            {
+                alert("Inappropriate Contact no.");
+                return false;
+            }
+
+            if(x.length<3)
+            {
+                alert("Inappropriate Name");
+                return false;
+            }
+            if(z.length<6)    
+            {
+                alert("Weak password!");
+                return false;
+            }
+            if(!z.test(l))
+            {
+                alert("Weak password!");
+                return false;
+            }
+            if(!z.test(u))    
+            {
+                alert("Weak password!");
+                return false;
+            }
+            if(!z.test(n))    
+            {
+                alert("Weak password!");
+                return false;
+            }
+        }
+    </script>
+    <nav id="navbar">
+        <div style="float: left;">
+            <a href="index.html"><img id="img" src="pic/crown.jpg" border="0"></a>
+            <h2 id="h4"><b id="b">Shangri-la</b></h2>
+        </div>
+        <div style="float: left;">
+            <h1 id="h1">.Luxury.Redefined.</h1>
+        </div>
+        <div style="float: right;margin-top: 2%;">
+            <button class="login" ><a href="login.html">Checkout</a></button>
+            <button class="login"><a href="Myacc.php">My Acc.</a></button>
+            <select class="login">
+              <option value="Korean">Korean</option>
+              <option value="English">English</option>
+              <option value="Chinese">Chinese</option>
+              <option value="Japanese">Japanese</option>
+            </select>
+        </div>
+    </nav>
+    <div id=form>
+        <form id="form" method="POST" action="submit.php" target="_blank" name="signup" onsubmit="return validate()">
+          <div class="naam">
+            <div style="color: bisque;">b</div>
+            <label for="name">Name:</label><br>
+            <input type="Name" id="name" name="name" placeholder="Name" required>
+            <label for="mail">Email id:</label><br>
+            <input type="Email" id="mail" name="mail" placeholder="Mail" required>
+            <label for="number">Contact No.:</label><br>
+            <input type="number" id="number" name="pno" placeholder="Phone Number" required>
+            <label for="checkin">Check-in Date:</label><br>
+            <input type="date" id="checkin" name="checkin" placeholder="Check In" required>
+            <label for="checkout">Check-out Date:</label><br>
+            <input type="date" id="checkout" name="checkout" placeholder="Check Out" required>
+            <label for="rooms">Room type:</label><br>
+            <input type="checkbox" name="single" value="Single" checked>Single
+            <input type="checkbox" name="twin" value="Twin">Twin
+            <input type="checkbox" name="king" value="King">King
+            <input type="checkbox" name="queen" value="Queen">Queen<br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <label for="repassword">Repeat-Password:</label><br>
+            <input type="password" id="repassword" name="repassword" placeholder="Repeat-Password" required>
+            <input type="submit" class="mahbut" name="submit" value="Book">
+            <input type="reset" class="mahbut" name="reset" value="Reset"><br>
+          </div>
+        </form>
+    </div>
+
+    <div id="newsletter">
+            <div style="margin-left: 15px; margin-top: 15px;">
+                <div style="color: linen">4</div>
+                <h4 id="h4-letter">SignUp for our newsletter</h4>
+                <p id="p-letter">For exclusive benefits, insider news and out-of-the-box travel inspirations</p>
+                <input id="input-letter" type="text" name="email" placeholder="Mail ID"><br>
+                <button id="btn-letter"><b>Signup</b></button>
+            </div>
+        </div>
+
+
+        <div id="foot">
+            <div style="margin-left: 15px; margin-top: 10px;">
+                <a href="#"><img id="foot-img" src="pic/crown.jpg" border="0"></a>
+                <h3 id="h3-img">GRAND LUXURY HOTELS<br>SHANGRI-LA</h3>
+                <hr>
+                <p id="foot-p">Contact our experts for free<br><h4>+44 20 3519 2700</h4></p>
+                <a href="http://wwww.pinterest.com"><img class="foot-logo" src="pic/pinterest.png" border="0"></a>
+                <a href="http://www.twitter.com"><img class="foot-logo" src="pic/twitter.png" border="0"></a>
+                <a href="http://www.instagram.com"><img class="foot-logo" src="pic/instagram.png" border="0"></a>
+                <a href="http://www.youtube.com"><img class="foot-logo" src="pic/youtube.png" border="0"></a>
+                <a href="http://www.facebook.com"><img class="foot-logo" src="pic/facebook.png" border="0"></a>
+                <p id="foot-details">Our Team - Grand Luxury Group - Le Club - Contact Us - Help - Terms & Conditions - Privacy policy</p>
+            </div>
+        </div>
+</body>
+</html>

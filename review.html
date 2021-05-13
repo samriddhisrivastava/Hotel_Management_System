@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="review.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+		<nav class="navbar">
+			<div>
+				<a href="index.html"><img id="img" src="pic/crown.jpg" border="0"></a>
+				<h4 id="h4"><b id="b">Shangri-la</b></h4>
+			</div>
+			<div>
+				<button class="login" ><a href="login.html">Checkout</a></button>
+				<button class="login"><a href="display.php">Create Acc.</a></button>
+				<select class="login">
+				  <option value="Korean">Korean</option>
+				  <option value="English">English</option>
+				  <option value="Chinese">Chinese</option>
+				  <option value="Japanese">Japanese</option>
+				</select>
+			</div>
+		</nav>
+	  	
+	  	<form method="POST" action="thanks.php" target="_blank" name="review">
+		  	<div style="float:left;" class='rating'>
+			  <label>
+			    <input type="radio" name="stars" value="1" />
+			    <span class="icon">:(</span>
+			  </label>
+			  <label>
+			    <input type="radio" name="stars" value="2" />
+			    <span class="icon">:(</span>
+			    <span class="icon">-_-</span>
+			  </label>
+			  <label>
+			    <input type="radio" name="stars" value="3" />
+			    <span class="icon">:(</span>
+			    <span class="icon">-_-</span>
+			    <span class="icon">:)</span>   
+			  </label>
+			  <label>
+			    <input type="radio" name="stars" value="4" />
+			    <span class="icon">:(</span>
+			    <span class="icon">-_-</span>
+			    <span class="icon">:)</span>
+			    <span class="icon">[^^]</span>
+			  </label>
+			  <label>
+			    <input type="radio" name="stars" value="5" />
+			    <span class="icon">:(</span>
+			    <span class="icon">-_-</span>
+			    <span class="icon">:)</span>
+			    <span class="icon">[^^]</span>
+			    <span class="icon">;)</span>
+			  </label>
+			</div><br><br><br>
+
+			<h3>Write a Review!</h3>
+
+			<div>
+				<textarea name="rev" rows="15" cols="150">	</textarea>
+			</div>
+			<div style="margin-left: 1200px;">
+				<input type="submit" class="mahbut" name="submit" value="Rate">
+	        </div>
+		</form>
+
+
+		<div id="newsletter">
+			<div style="margin-left: 15px; margin-top: 15px;">
+				<div style="color: linen">4</div>
+				<h4 id="h4-letter">SignUp for our newsletter</h4>
+				<p id="p-letter">For exclusive benefits, insider news and out-of-the-box travel inspirations</p>
+				<input id="input-letter" type="text" name="email" placeholder="Mail ID"><br>
+				<button id="btn-letter"><b>Signup</b></button>
+			</div>
+		</div>
+
+
+		<div id="foot">
+			<div style="margin-left: 15px; margin-top: 10px;">
+				<a href="#"><img id="foot-img" src="pic/crown.jpg" border="0"></a>
+				<h3 id="h3-img">GRAND LUXURY HOTELS<br>SHANGRI-LA</h3>
+				<hr>
+				<p id="foot-p">Contact our experts for free<br><h4>+44 20 3519 2700</h4></p>
+				<a href="http://wwww.pinterest.com"><img class="foot-logo" src="pic/pinterest.png" border="0"></a>
+				<a href="http://www.twitter.com"><img class="foot-logo" src="pic/twitter.png" border="0"></a>
+				<a href="http://www.instagram.com"><img class="foot-logo" src="pic/instagram.png" border="0"></a>
+				<a href="http://www.youtube.com"><img class="foot-logo" src="pic/youtube.png" border="0"></a>
+				<a href="http://www.facebook.com"><img class="foot-logo" src="pic/facebook.png" border="0"></a>
+				<p id="foot-details">Our Team - Grand Luxury Group - Le Club - Contact Us - Help - Terms & Conditions - Privacy policy</p>
+			</div>
+		</div>
+</body>
+</html>

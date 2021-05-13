@@ -1,0 +1,134 @@
+body
+{
+	background-color:black;
+	color: white;
+}
+a
+{
+	color:grey;
+	text-decoration: none;
+}
+.login
+{
+	border-radius: 15px;
+	background-color: linen;
+	color: gray;
+	border: 3px solid indianred;
+	width: 120px;
+	height: 50px;
+}
+.login:hover
+{
+	background-color: indianred;
+	filter:brightness(1.25);
+}
+#h1
+{
+	font-size: 50px;
+	font-family: poppins;
+	position: absolute;
+	font-weight: 5;
+	left:38%;
+	color:indianred;
+}
+#navbar
+{
+	background-color:linen;
+	border: 3px solid linen;
+	height: 113px;
+}
+#b
+{
+	color:indianred;
+	font-family: poppins;
+}
+#h4
+{
+	margin-left: 15px;
+	margin-block-start: 0;
+	background-color: linen;
+	width: 120px;
+	height: 30px;
+	font: indianred;
+	font-family: poppins;
+}
+#img
+{
+	margin-left: 15px;
+	height: 50px;
+	width: 50px;
+	padding-top: 5px;
+	padding-left: 5px;
+	border-radius: 25px;
+}
+.kmore
+{
+	position: absolute;
+	top:54%;
+	left:45%;
+	border-radius: 25px;
+	background-color: transparent;
+	font-family: poppins;
+	color:indianred;
+	width: 150px;
+	height: 60px;
+	border-block-start-style: none;
+	border-block-end-style: none;
+}
+.kmore:hover
+{
+	background-color:linen;
+}
+#foot
+{
+	background-color: #696969;
+	height: 350px;
+	color: white;
+	font-family: calibri;
+}
+#foot-img
+{
+	margin-top: 10px;
+	border-radius: 50%;
+	height: 100px;
+}
+#h3-img
+{
+	float: right;
+	margin-right: 1100px;
+	margin-top: 35px;
+}
+#foot-p
+{
+	margin-block-start: 0;
+    margin-block-end: 0;
+}
+.foot-logo
+{
+	height: 35px;
+	border-radius: 30%;
+	margin-left: 205px;
+}
+.foot-logo:hover
+{
+	background-color: linen;
+}
+#foot-details
+{
+	margin-top: 40px;
+	margin-left: 400px;
+	font-family: poppins;
+	font-weight: 20px;
+}
+#newsletter
+{
+	height: 350px;
+	background-color: linen;
+	margin-top: 15px;
+	display-block-end:0;
+	color: grey;
+}
+label
+{
+	color: white;
+}

@@ -1,0 +1,10 @@
+.login
+{
+	border-radius: 15px;
+	background-color: linen;
+	color: gray;
+	border: 3px solid indianred;
+	width: 120px;
+	height: 50px;
+	margin-left: 700px;
+}
